@@ -6,8 +6,39 @@
     <title>Imperial Pastry Stout</title>
 </head>
 <body>
-    <header>
-
+    <header class="header">
+        <h1>Lundbergs Bryggeri</h1>
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menutext">Meny</span>
+        </button>
+        <nav class="menu" id="nav-menu">
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menutext">Stäng meny</span>
+            </button>
+            <ul class="headmenu">
+                <li><a href="main.html">Hem</a></li>
+                <li><a href="about.html">Våra öl</a></li>
+                <li><a href="imageproc.html">Om oss</a></li>
+                <li>
+                    <a href="shoppingcart.html">
+                        <picture>
+                            <source srcset="images/basket.webp" type="image/webp">
+                            <source srcset="images/basket.avif" type="image/avif">
+                            <img src="images/basket.png" alt="Varukorg">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
 
