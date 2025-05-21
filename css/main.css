@@ -3,9 +3,23 @@ body {
     background-color: #F9F5F0;
     margin: 0;
 }
-.citat {
-    background-color: #B87333;
+.main {
+    background-color: #8B5E3C;
     color: #F9F5F0;
+}
+.productsbutton {
+    background-color: #B87333;
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.productsbutton {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    font-size: large;
 }
 footer {
     background-color: #3e3e3e;
@@ -16,13 +30,18 @@ footer {
 .headmenu > li {display: inline-block; position: relative;}
 .headmenu > li > ul {display: none; position: absolute; top: 100%; list-style-type: none; margin: 0; padding: 0;} 
 .headmenu > li:hover > ul {display: block;} 
-.headmenu a {text-decoration: none;}  
+a {text-decoration: none;}  
 .headmenu > li > ul > li:hover {background-color:white;} 
 /*Färger för länkarna vid olika tillfällen*/ 
 a:link{color: #3e3e3e;}  
 a:visited{color: #3e3e3e;} 
 a:hover{color: #3e3e3e;} 
 a:active{color: #3e3e3e;} 
+/*Avvikande css för knapp-länk*/
+.productsbutton:link {color: #F9F5F0;}
+.productsbutton:visited{color: #F9F5F0;} 
+.productsbutton:hover{color: #F9F5F0;} 
+.productsbutton:active{color: #F9F5F0;} 
 @media (max-width:1024px) {
     /* Media queries sÃ¥ att hamburgarmenyn endast visas fÃ¶r mindre skÃ¤rmar*/
     /* CSS fÃ¶r hamburgermenyn*/
@@ -132,6 +151,7 @@ a:active{color: #3e3e3e;}
             grid-area: name;
             margin-left: 3em;
             margin-top: 1.5em;
+            color: #3e3e3e;
         }
         .headmenu {
             grid-area: menu;
@@ -152,6 +172,57 @@ a:active{color: #3e3e3e;}
             height: 30px;
             justify-content: center;
             align-items: center;
+        }
+        .main {
+            grid-area: main;
+            display: grid;
+            grid-template-areas:
+            "video text";
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .untilvideo {
+            grid-area: video;
+            max-width: 400px;
+            width: 100%;
+            margin: auto;
+        }
+        .text {
+            grid-area: text;
+            grid-template-areas: 
+            "firsttext"
+            "secondtext"
+            "button";
+            grid-template-rows: auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 5em;
+        }
+        .firsttext {
+            grid-area: firsttext;
+            text-align: left;
+            font-size: 48px;
+            max-width: 350px;
+            width: 100%;
+        }
+        .secondtext {
+            grid-area: secondtext;
+            text-align: left;
+            font-size: 20px;
+            max-width: 280px;
+            width: 100%;
+        }
+        .productsbutton {
+            grid-area: button;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 3em;
+            margin-left: 3em;
         }
         .footer {
             grid-area: footer;
@@ -194,7 +265,7 @@ a:active{color: #3e3e3e;}
             margin-top: 0.3em;
           }
         }
-        @media (max-width: 1024px) {
+        @media (min-width: 601px) and (max-width: 1024px) {
             body {
                 display: grid;
                 grid-template-areas: 
@@ -216,6 +287,7 @@ a:active{color: #3e3e3e;}
                 grid-area: name;
                 margin-left: 3em;
                 margin-top: 1.5em;
+                color: #3e3e3e;
             }
             .headmenu {
                 grid-area: menu;
@@ -235,6 +307,61 @@ a:active{color: #3e3e3e;}
                 height: 30px;
                 justify-content: center;
                 align-items: center;
+            }
+            .main {
+                grid-area: main;
+                display: grid;
+                grid-template-areas:
+                "video text";
+                grid-template-rows: auto;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+                gap: 1em;
+            }
+            .untilvideo {
+                grid-area: video;
+                max-width: 400px;
+                width: 100%;
+                margin: auto;
+                margin: 3em;
+                margin-left: 5em;
+            }
+            .text {
+                grid-area: text;
+                display: grid;
+                grid-template-areas: 
+                "firsttext"
+                "secondtext"
+                "button";
+                grid-template-rows: auto;
+                justify-items: center;
+                align-items: center;
+                text-align: center;
+                margin: 5em;
+            }
+            .firsttext {
+                grid-area: firsttext;
+                text-align: left;
+                font-size: 48px;
+                max-width: 350px;
+                width: 100%;
+            }
+            .secondtext {
+                grid-area: secondtext;
+                text-align: left;
+                font-size: 20px;
+                max-width: 280px;
+                width: 100%;
+            }
+            .productsbutton {
+                grid-area: button;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 3em;
+                margin-left: 3em;
             }
             .footer {
                 grid-area: footer;
@@ -299,6 +426,7 @@ a:active{color: #3e3e3e;}
                 grid-area: name;
                 margin-left: 1em;
                 margin-top: 1em;
+                color: #3e3e3e;
             }
             .headmenu {
                 grid-area: menu;
@@ -309,6 +437,7 @@ a:active{color: #3e3e3e;}
                 float: right;
                 line-height: 35px;
                 text-align: center;
+                z-index: 1000; /*Placera menyn överst*/
             }
             li {
                 font-size: large;
@@ -319,6 +448,54 @@ a:active{color: #3e3e3e;}
                 justify-content: center;
                 align-items: center;
             }
+            .main {
+                position: relative;
+                max-width: 600px;
+                margin: 0 auto;
+              }
+              /* Gör bildbehållaren positionerbar */
+              .video {
+                position: relative;
+              }
+              /* Gör bilden genomskinlig */
+              .untilvideo {
+                width: 100%;
+                height: auto;
+                display: block;
+                opacity: 0.4; /*Genomskinlighet*/
+              }
+              /* Lägg texten ovanpå bilden */
+              .text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                padding: 1rem;
+                z-index: 2;
+                width: 90%;
+              }
+              .firsttext {
+                font-size: 48px;
+                max-width: 350px;
+                width: 100%;
+                text-align: left;
+                margin-left: 125px;
+                margin-right: auto;
+                margin-bottom: 1em;
+              }
+              .secondtext {
+                font-size: 20px;
+                max-width: 280px;
+                width: 100%;
+                margin-left: 125px;
+                margin-right: auto;
+                text-align: left;
+              }
+              .productsbutton {
+                display: inline-block;
+                margin-top: 5em;
+              }
             .footer {
                 grid-area: footer;
                 display: grid;
@@ -358,4 +535,4 @@ a:active{color: #3e3e3e;}
                 line-height: 2.2; 
                 margin-top: 0.3em;
               }
-        }
+            }
