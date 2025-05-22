@@ -3,9 +3,25 @@ body {
     background-color: #F9F5F0;
     margin: 0;
 }
-.citat {
+.order_form {
+    background-color: white;
+    color: #3e3e3e;
+}
+input {
+    background-color: lightgray;
+}
+.orderbutton {
     background-color: #B87333;
     color: #F9F5F0;
+    max-width: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    font-size: large;
 }
 footer {
     background-color: #3e3e3e;
