@@ -22,6 +22,9 @@ a:link{color: #3e3e3e;}
 a:visited{color: #3e3e3e;} 
 a:hover{color: #3e3e3e;} 
 a:active{color: #3e3e3e;} 
+.product1_link, .product2_link, .product3_link, .product4_link, .product5_link {
+    text-decoration: none;
+}
 @media (max-width:1024px) {
     /* Media queries sÃ¥ att hamburgarmenyn endast visas fÃ¶r mindre skÃ¤rmar*/
     /* CSS fÃ¶r hamburgermenyn*/
@@ -154,6 +157,66 @@ a:active{color: #3e3e3e;}
         }
         .main {
             grid-area: main;
+            display: grid;
+            grid-template-areas: 
+            "productsheader"
+            "products";
+            grid-template-rows: auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .productsheader {
+            grid-area: productsheader;
+            font-size: xx-large;
+            margin-bottom: 2em;
+        }
+        .products {
+            grid-area: products;
+            display: grid;
+            grid-template-areas: 
+            "product1 product2 product3"
+            "product4 product5 empty";
+            grid-template-rows: auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 2em;
+            margin-bottom: 3em;
+        }
+        .product1_img, .product2_img, .product3_img, .product4_img, .product5_img {
+            max-height: 250px;
+            height: 100%;
+        }
+        .product1 {
+            grid-area: product1;
+            padding: 2em;
+        }
+        .product2 {
+            grid-area: product2;
+            padding: 2em;
+        }
+        .product3 {
+            grid-area: product3;
+            padding: 2em;
+        }
+        .product4 {
+            grid-area: product4;
+            padding: 2em;
+        }
+        .product5 {
+            grid-area: product5;
+            padding: 2em;
+        }
+        .basket_gold {
+            max-width: 30px;
+            width: 100%;
+        }
+        .price_row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5em;
         }
         .footer {
             grid-area: footer;
@@ -238,6 +301,69 @@ a:active{color: #3e3e3e;}
                 justify-content: center;
                 align-items: center;
             }
+            .main {
+                grid-area: main;
+                display: grid;
+                grid-template-areas: 
+                "productsheader"
+                "products";
+                grid-template-rows: auto;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .productsheader {
+                grid-area: productsheader;
+                font-size: xx-large;
+                margin-bottom: 2em;
+            }
+            .products {
+                grid-area: products;
+                display: grid;
+                grid-template-areas: 
+                "product1 product2 product3"
+                "product4 product5 empty";
+                grid-template-rows: auto;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 2em;
+                margin-bottom: 3em;
+            }
+            .product1_img, .product2_img, .product3_img, .product4_img, .product5_img {
+                max-height: 250px;
+                height: 100%;
+            }
+            .product1 {
+                grid-area: product1;
+                padding: 2em;
+            }
+            .product2 {
+                grid-area: product2;
+                padding: 2em;
+            }
+            .product3 {
+                grid-area: product3;
+                padding: 2em;
+            }
+            .product4 {
+                grid-area: product4;
+                padding: 2em;
+            }
+            .product5 {
+                grid-area: product5;
+                padding: 2em;
+            }
+            .basket_gold {
+                max-width: 30px;
+                width: 100%;
+            }
+            .price_row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5em;
+            }
             .footer {
                 grid-area: footer;
                 display: grid;
@@ -320,6 +446,72 @@ a:active{color: #3e3e3e;}
                 height: 30px;
                 justify-content: center;
                 align-items: center;
+            }
+            .main {
+                grid-area: main;
+                display: grid;
+                grid-template-areas: 
+                "productsheader"
+                "products";
+                grid-template-rows: auto;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .productsheader {
+                grid-area: productsheader;
+                font-size: xx-large;
+                margin-bottom: 2em;
+            }
+            .products {
+                grid-area: products;
+                display: grid;
+                grid-template-areas: 
+                "product1"
+                "product2"
+                "product3"
+                "product4"
+                "product5";
+                grid-template-rows: auto;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 2em;
+                margin-bottom: 3em;
+            }
+            .product1_img, .product2_img, .product3_img, .product4_img, .product5_img {
+                max-height: 250px;
+                height: 100%;
+            }
+            .product1 {
+                grid-area: product1;
+                padding: 2em;
+            }
+            .product2 {
+                grid-area: product2;
+                padding: 2em;
+            }
+            .product3 {
+                grid-area: product3;
+                padding: 2em;
+            }
+            .product4 {
+                grid-area: product4;
+                padding: 2em;
+            }
+            .product5 {
+                grid-area: product5;
+                padding: 2em;
+            }
+            .basket_gold {
+                max-width: 30px;
+                width: 100%;
+            }
+            .price_row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5em;
             }
             .footer {
                 grid-area: footer;
