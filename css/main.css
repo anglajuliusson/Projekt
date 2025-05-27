@@ -172,56 +172,59 @@ a:active{color: #3e3e3e;}
             align-items: center;
         }
         .main {
-            grid-area: main;
-            display: grid;
-            grid-template-areas:
-            "video text";
-            grid-template-rows: auto;
-            grid-template-columns: 1fr 1fr;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            position: relative;
+            min-width: 1025px;
+            margin: 0 auto;
         }
-        .untilvideo {
-            grid-area: video;
-            max-width: 400px;
+        .backgroundvideo {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            margin: auto;
-        }
-        .text {
-            grid-area: text;
-            grid-template-areas: 
-            "firsttext"
-            "secondtext"
-            "button";
-            grid-template-rows: auto;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin: 5em;
-        }
-        .firsttext {
-            grid-area: firsttext;
-            text-align: left;
-            font-size: 48px;
-            max-width: 350px;
-            width: 100%;
-        }
-        .secondtext {
-            grid-area: secondtext;
-            text-align: left;
-            font-size: 20px;
-            max-width: 280px;
-            width: 100%;
-        }
-        .productsbutton {
-            grid-area: button;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            margin-top: 3em;
-            margin-left: 3em;
-        }
+            height: 100%;
+            object-fit: cover;
+            z-index: 1000; 
+            display: block;
+            opacity: 0.4; /*Genomskinlighet*/
+          }
+          .video {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+          }
+              /* Lägg texten ovanpå bilden */
+              .text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                padding: 1rem;
+                z-index: 10000;
+                width: 90%;
+              }
+              .firsttext {
+                font-size: 48px;
+                max-width: 350px;
+                width: 100%;
+                text-align: left;
+                margin-left: 125px;
+                margin-right: auto;
+                margin-bottom: 1em;
+              }
+              .secondtext {
+                font-size: 20px;
+                max-width: 280px;
+                width: 100%;
+                margin-left: 125px;
+                margin-right: auto;
+                text-align: left;
+              }
+              .productsbutton {
+                display: inline-block;
+                margin-top: 5em;
+              }
         .footer {
             grid-area: footer;
             display: grid;
@@ -307,60 +310,59 @@ a:active{color: #3e3e3e;}
                 align-items: center;
             }
             .main {
-                grid-area: main;
-                display: grid;
-                grid-template-areas:
-                "video text";
-                grid-template-rows: auto;
-                grid-template-columns: 1fr 1fr;
-                justify-items: center;
-                align-items: center;
-                text-align: center;
-                gap: 1em;
+                position: relative;
+                min-width: 1025px;
+                margin: 0 auto;
             }
-            .untilvideo {
-                grid-area: video;
-                max-width: 400px;
+            .backgroundvideo {
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
-                margin: auto;
-                margin: 3em;
-                margin-left: 5em;
-            }
-            .text {
-                grid-area: text;
-                display: grid;
-                grid-template-areas: 
-                "firsttext"
-                "secondtext"
-                "button";
-                grid-template-rows: auto;
-                justify-items: center;
-                align-items: center;
-                text-align: center;
-                margin: 5em;
-            }
-            .firsttext {
-                grid-area: firsttext;
-                text-align: left;
-                font-size: 48px;
-                max-width: 350px;
-                width: 100%;
-            }
-            .secondtext {
-                grid-area: secondtext;
-                text-align: left;
-                font-size: 20px;
-                max-width: 280px;
-                width: 100%;
-            }
-            .productsbutton {
-                grid-area: button;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                margin-top: 3em;
-                margin-left: 3em;
-            }
+                height: 100%;
+                object-fit: cover;
+                z-index: 1000; 
+                display: block;
+                opacity: 0.4; /*Genomskinlighet*/
+              }
+              .video {
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+              }
+                  /* Lägg texten ovanpå bilden */
+                  .text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    padding: 1rem;
+                    z-index: 10000;
+                    width: 90%;
+                  }
+                  .firsttext {
+                    font-size: 48px;
+                    max-width: 350px;
+                    width: 100%;
+                    text-align: left;
+                    margin-left: 125px;
+                    margin-right: auto;
+                    margin-bottom: 1em;
+                  }
+                  .secondtext {
+                    font-size: 20px;
+                    max-width: 280px;
+                    width: 100%;
+                    margin-left: 125px;
+                    margin-right: auto;
+                    text-align: left;
+                  }
+                  .productsbutton {
+                    display: inline-block;
+                    margin-top: 5em;
+                  }
             .footer {
                 grid-area: footer;
                 display: grid;
@@ -450,50 +452,56 @@ a:active{color: #3e3e3e;}
                 position: relative;
                 max-width: 600px;
                 margin: 0 auto;
-              }
-              /* Gör bildbehållaren positionerbar */
-              .video {
-                position: relative;
-              }
-              /* Gör bilden genomskinlig */
-              .untilvideo {
+            }
+            .backgroundvideo {
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
-                height: auto;
+                height: 100%;
+                object-fit: cover;
+                z-index: 1000; 
                 display: block;
                 opacity: 0.4; /*Genomskinlighet*/
               }
-              /* Lägg texten ovanpå bilden */
-              .text {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-                padding: 1rem;
-                z-index: 2;
-                width: 90%;
+              .video {
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
               }
-              .firsttext {
-                font-size: 48px;
-                max-width: 350px;
-                width: 100%;
-                text-align: left;
-                margin-left: 125px;
-                margin-right: auto;
-                margin-bottom: 1em;
-              }
-              .secondtext {
-                font-size: 20px;
-                max-width: 280px;
-                width: 100%;
-                margin-left: 125px;
-                margin-right: auto;
-                text-align: left;
-              }
-              .productsbutton {
-                display: inline-block;
-                margin-top: 5em;
-              }
+                  /* Lägg texten ovanpå bilden */
+                  .text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    padding: 1rem;
+                    z-index: 10000;
+                    width: 90%;
+                  }
+                  .firsttext {
+                    font-size: 48px;
+                    max-width: 350px;
+                    width: 100%;
+                    text-align: left;
+                    margin-left: 125px;
+                    margin-right: auto;
+                    margin-bottom: 1em;
+                  }
+                  .secondtext {
+                    font-size: 20px;
+                    max-width: 280px;
+                    width: 100%;
+                    margin-left: 125px;
+                    margin-right: auto;
+                    text-align: left;
+                  }
+                  .productsbutton {
+                    display: inline-block;
+                    margin-top: 5em;
+                  }
             .footer {
                 grid-area: footer;
                 display: grid;
