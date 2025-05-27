@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/product.css">
 </head>
 <body>
+    <div id="notify"></div>
     <header class="header">
         <h1>Lundbergs Bryggeri</h1>
         <button class="menu-btn open" id="open-menu">
@@ -42,7 +43,27 @@
         </nav>
     </header>
     <main class="main">
-        <h2 class="productheader">Lundbergs NZ IPA</h2>
+        <div class="product_pictures">
+            <picture>
+                <source srcset="images/product4.webp" type="image/webp">
+                <source srcset="images/product4.avif" type="image/avif">
+                <img class="product_first_img" src="images/product4.png" alt="Lundbergs NZ IPA">
+            </picture>
+        </div>
+        <div class="productinfo">
+            <h3>Lundbergs NZ IPA</h3>
+            <p>330ml 6% vol.</p>
+            <div class="price_row">
+                <p>29:-</p>
+                <button class="addtocart_button" onclick="addToBasket(this, '004', 'Lundbergs NZ IPA', 29, 'images/product4.png', true)">Lägg i varukorg 
+                <picture>
+                    <source srcset="images/basket_white.webp" type="image/webp">
+                    <source srcset="images/basket_white.avif" type="image/avif">
+                    <img class="basket_white" src="images/basket_white.png" alt="Varukorg">
+                </picture>
+                </button>
+                </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="contact">

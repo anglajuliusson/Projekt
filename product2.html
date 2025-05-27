@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/product.css">
 </head>
 <body>
+    <div id="notify"></div>
     <header class="header">
         <h1>Lundbergs Bryggeri</h1>
         <button class="menu-btn open" id="open-menu">
@@ -42,7 +43,27 @@
         </nav>
     </header>
     <main class="main">
-        <h2 class="productheader">Imperial Pastry Stout</h2>
+        <div class="product_pictures">
+            <picture>
+                <source srcset="images/product2.webp" type="image/webp">
+                <source srcset="images/product2.avif" type="image/avif">
+                <img class="product_first_img" src="images/product2.png" alt="Imperial Pastry Stout">
+            </picture>
+        </div>
+        <div class="productinfo">
+            <h3>Imperial Pastry Stout</h3>
+            <p>330ml 10,9% vol.</p>
+            <div class="price_row">
+                <p>49:-</p>
+                <button class="addtocart_button" onclick="addToBasket(this, '002', 'Imperial Pastry Stout', 49, 'images/product2.png', true)">Lägg i varukorg 
+                <picture>
+                    <source srcset="images/basket_white.webp" type="image/webp">
+                    <source srcset="images/basket_white.avif" type="image/avif">
+                    <img class="basket_white" src="images/basket_white.png" alt="Varukorg">
+                </picture>
+                </button>
+                </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="contact">
