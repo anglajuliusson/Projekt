@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om utvecklaren</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Lundbergs Bryggeri</h1>
+        <button class="menu-btn open" id="open-menu">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menutext">Meny</span>
+        </button>
+        <nav class="menu" id="nav-menu">
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menutext">Stäng meny</span>
+            </button>
+            <ul class="headmenu">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="products.html">Våra öl</a></li>
+                <li><a class="active" href="about.html">Om oss</a></li>
+                <li>
+                    <a href="shoppingcart.html">
+                        <picture>
+                            <source srcset="images/basket.webp" type="image/webp">
+                            <source srcset="images/basket.avif" type="image/avif">
+                            <img class="basket" src="images/basket.png" alt="Varukorg">
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        
+    </main>
+    <footer class="footer">
+        <div class="contact">
+            <p class="contactinfo">Kontaktuppgifter:</p>
+            <div class="mailrow">
+            <picture>
+                <source srcset="images/mail.webp" type="image/webp">
+                <source srcset="images/mail.avif" type="image/avif">
+                <img class="mail" src="images/mail.png" alt="Ikon brev">
+            </picture><p class="mailinfo">info@lundbergsbryggeri.se</p>
+            </div>
+            <div class="phonerow" >
+            <picture>
+                <source srcset="images/phone.webp" type="image/webp">
+                <source srcset="images/phone.avif" type="image/avif">
+                <img class="phone" src="images/phone.png" alt="Ikon telefon">
+            </picture><p class="phonenr" >072-701 51 56</p>
+            </div>
+        </div>
+        <div class="adressinfo">
+            <p class="adress" >Adress:</p>
+            <p class="street" >Borgargatan 22, <br>
+                933 31 ARVIDSJAUR
+            </p>
+        </div>
+        <div class="infoaboutme">
+            <a href="aboutme.html">Information om utvecklaren</a>
+        </div>
+    </footer>
+    <script src="js/meny.js"></script>
+</body>
+</html>
