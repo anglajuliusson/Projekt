@@ -153,7 +153,44 @@ a:active{color: #3e3e3e;}
             justify-content: center;
             align-items: center;
         }
-
+        .main {
+            grid-area: main;
+            display: grid;
+            grid-template-areas: 
+            "aboutmeheader aboutmeheader"
+            "img infotext";
+            grid-template-rows: auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .aboutmeheader {
+            grid-area: aboutmeheader;
+            font-size: xx-large;
+            margin-bottom: 2em;
+            text-align: center;
+        }
+        .portratt {
+            grid-area: img;
+            margin: 2em;
+        }
+        .portrattimg {
+            border-radius: 50%;
+            max-width: 500px;
+            width: 100%;
+        }
+        .text {
+            grid-area: infotext
+        }
+        .infotext {
+            max-width: 500px;
+            width: 100%;
+            text-align: left;
+            font-size: large;
+            margin: auto;
+            margin-bottom: 3em;
+            padding: 2em;
+        }
         .footer {
             grid-area: footer;
             display: grid;
@@ -237,6 +274,44 @@ a:active{color: #3e3e3e;}
                 height: 30px;
                 justify-content: center;
                 align-items: center;
+            }
+            .main {
+                grid-area: main;
+                display: grid;
+                grid-template-areas: 
+                "aboutmeheader aboutmeheader"
+                "img infotext";
+                grid-template-rows: auto;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .aboutmeheader {
+                grid-area: aboutmeheader;
+                font-size: xx-large;
+                margin-bottom: 2em;
+                text-align: center;
+            }
+            .portratt {
+                grid-area: img;
+                margin: 2em;
+            }
+            .portrattimg {
+                border-radius: 50%;
+                max-width: 400px;
+                width: 100%;
+            }
+            .text {
+                grid-area: infotext
+            }
+            .infotext {
+                max-width: 400px;
+                width: 100%;
+                text-align: left;
+                font-size: large;
+                margin: auto;
+                margin-bottom: 3em;
+                padding: 2em;
             }
             .footer {
                 grid-area: footer;
@@ -322,6 +397,45 @@ a:active{color: #3e3e3e;}
                 height: 30px;
                 justify-content: center;
                 align-items: center;
+            }
+            .main {
+                grid-area: main;
+                display: grid;
+                grid-template-areas: 
+                "aboutmeheader"
+                "img"
+                "infotext";
+                grid-template-rows: auto;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .aboutmeheader {
+                grid-area: aboutmeheader;
+                font-size: xx-large;
+                margin-bottom: 2em;
+                text-align: center;
+            }
+            .portratt {
+                grid-area: img;
+                margin: 2em;
+            }
+            .portrattimg {
+                border-radius: 50%;
+                max-width: 300px;
+                width: 100%;
+            }
+            .text {
+                grid-area: infotext
+            }
+            .infotext {
+                max-width: 400px;
+                width: 100%;
+                text-align: left;
+                font-size: large;
+                margin: auto;
+                margin-bottom: 3em;
+                padding: 2em;
             }
             .footer {
                 grid-area: footer;
