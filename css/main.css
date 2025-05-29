@@ -28,7 +28,7 @@ footer {
 .headmenu > li {display: inline-block; position: relative;}
 .headmenu > li > ul {display: none; position: absolute; top: 100%; list-style-type: none; margin: 0; padding: 0;} 
 .headmenu > li:hover > ul {display: block;} 
-a {text-decoration: none;}  
+.headmenu a {text-decoration: none;}  
 .headmenu > li > ul > li:hover {background-color:white;} 
 /*Färger för länkarna vid olika tillfällen*/ 
 a:link{color: #3e3e3e;}  
