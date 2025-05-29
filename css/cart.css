@@ -249,7 +249,7 @@ a:active{color: #3e3e3e;}
             grid-area: footer;
             display: grid;
             grid-template-areas: 
-            "contact adress";
+            "contact adress aboutme";
             grid-template-rows: auto;
             grid-template-columns: max-content max-content;
             width: 100vw;
@@ -285,6 +285,14 @@ a:active{color: #3e3e3e;}
             line-height: 2.2; 
             margin-top: 0.3em;
           }
+          .infoaboutme {
+            grid-area: aboutme;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: xx-large;
+        }
         }
         @media (min-width: 601px) and (max-width: 1024px) {
             #basket-holder {display: none;} /*Dölj varukorslista*/
@@ -390,7 +398,7 @@ a:active{color: #3e3e3e;}
                 grid-area: footer;
                 display: grid;
                 grid-template-areas: 
-                "contact adress";
+                "contact adress aboutme";
                 grid-template-rows: auto;
                 grid-template-columns: max-content max-content;
                 width: 100vw;
@@ -404,7 +412,7 @@ a:active{color: #3e3e3e;}
                 flex-direction: column;
                 gap: 0.2em; 
                 margin: 0;
-                padding: 3em;
+                padding: 2em;
             }
             .mailrow, .phonerow {
                 display: flex;
@@ -419,13 +427,21 @@ a:active{color: #3e3e3e;}
             .adressinfo {
                 grid-area: adress;
                 align-self: start;
-                padding: 3em;
+                padding: 2em;
             }
             .street {
                 font-size: large;
                 line-height: 2.2; 
                 margin-top: 0.3em;
               }
+              .infoaboutme {
+                grid-area: aboutme;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-size: xx-large;
+            }
         }
         @media (max-width: 600px) {
             #basket-holder {display: none;} /*Dölj varukorslista*/
@@ -531,7 +547,8 @@ a:active{color: #3e3e3e;}
                 grid-area: footer;
                 display: grid;
                 grid-template-areas: 
-                "contact adress";
+                "contact adress"
+                "aboutme aboutme";
                 grid-template-rows: auto;
                 grid-template-columns: max-content max-content;
                 width: 100vw;
@@ -566,4 +583,12 @@ a:active{color: #3e3e3e;}
                 line-height: 2.2; 
                 margin-top: 0.3em;
               }
+              .infoaboutme {
+                grid-area: aboutme;
+                text-align: center;
+                justify-self: center;
+                font-size: xx-large;
+                margin-bottom: 2em;
+                width: 100%;
+            }
         }
