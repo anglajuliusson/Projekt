@@ -18,8 +18,8 @@ body {
     text-align: center;
     padding: 1em;
     font-size: large;
+    text-decoration: none;
 }
-.productsbutton a {text-decoration: none;}
 footer {
     background-color: #3e3e3e;
     color: #F9F5F0;
