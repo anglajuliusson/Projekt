@@ -2,6 +2,7 @@
 body {
     background-color: #F9F5F0;
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 .product1, .product2, .product3, .product4, .product5 {
     background-color: white;
