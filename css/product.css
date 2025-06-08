@@ -45,6 +45,10 @@ a:active{color: #3e3e3e;}
 .infoaboutme a:visited{color: #F9F5F0;} 
 .infoaboutme a:hover{color: #F9F5F0;} 
 .infoaboutme a:active{color: #F9F5F0;} 
+/*Produktvideolänk*/
+.productvideo_link:link {color: #B87333;}
+.productvideo_link:visited {color: #B87333;}
+.productvideo_link:active {color: #B87333;}
 /*Notis om att varan är tillagd*/
 #notify {
     width: 100%;
