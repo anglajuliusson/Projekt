@@ -214,6 +214,32 @@ a:active{color: #3e3e3e;}
             grid-area: img;
             margin-right: 5em;
         }
+        #product1_pictures {
+            grid-area: img;
+            margin-right: 5em;
+            display: grid;
+            grid-template-areas: 
+            "first second";
+            grid-template-rows: auto;
+            grid-template-columns: auto auto;
+            gap: 3em;
+            align-items: start;
+            grid-auto-rows: 1fr;
+        }
+        #product_first_img {
+            grid-area: first;
+            max-height: 400px;
+            height: 100%;
+        }
+        .product_second_img {
+            grid-area: second;
+            max-width: 80px;
+            width: 100%;
+        }
+        .second_img_wrapper {
+            display: flex;
+            align-self: end;
+        }
         .product_first_img {
             max-height: 400px;
             height: 100%;
@@ -351,6 +377,32 @@ a:active{color: #3e3e3e;}
             }
             .product_pictures {
                 grid-area: img;
+            }
+            #product1_pictures {
+                grid-area: img;
+                margin-right: 2em;
+                display: grid;
+                grid-template-areas: 
+                "first second";
+                grid-template-rows: auto;
+                grid-template-columns: auto auto;
+                gap: 2em;
+                align-items: start;
+                grid-auto-rows: 1fr;
+            }
+            #product_first_img {
+                grid-area: first;
+                max-height: 400px;
+                height: 100%;
+            }
+            .product_second_img {
+                grid-area: second;
+                max-width: 80px;
+                width: 100%;
+            }
+            .second_img_wrapper {
+                display: flex;
+                align-self: end;
             }
             .product_first_img {
                 max-height: 350px;
@@ -490,6 +542,32 @@ a:active{color: #3e3e3e;}
             }
             .product_pictures {
                 grid-area: img;
+            }
+            #product1_pictures {
+                grid-area: img;
+                margin: auto;
+                display: grid;
+                grid-template-areas: 
+                "first second";
+                grid-template-rows: auto;
+                grid-template-columns: auto auto;
+                gap: 1em;
+                align-items: start;
+                grid-auto-rows: 1fr;
+            }
+            #product_first_img {
+                grid-area: first;
+                max-height: 400px;
+                height: 100%;
+            }
+            .product_second_img {
+                grid-area: second;
+                max-width: 80px;
+                width: 100%;
+            }
+            .second_img_wrapper {
+                display: flex;
+                align-self: end;
             }
             .product_first_img {
                 max-height: 350px;
